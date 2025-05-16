@@ -1,0 +1,723 @@
+{
+  "client": {
+    "disableModulesOnJoin": false,
+    "bypassMode": false
+  },
+  "modules": {
+    "CrystalAura": {
+      "enabled": false,
+      "settings": {
+        "Keybind": 82,
+        "Visible": true
+      }
+    },
+    "AutoCrystal": {
+      "enabled": false,
+      "settings": {
+        "Keybind": 71,
+        "Visible": true,
+        "Place Delay": 1.0,
+        "Break Delay": 1.0,
+        "Place Range": 4.5,
+        "Break Range": 4.5,
+        "Walls Range": 3.5,
+        "Min Damage": 5.0,
+        "Max Self Damage": 10.0,
+        "Anti Suicide": true,
+        "Auto Switch": true,
+        "Silent Switch": false,
+        "Rotate": false,
+        "Bypass Mode": false,
+        "Pause While Eating": true,
+        "Random Delay": true,
+        "Place": true,
+        "Break": true,
+        "Ray Trace": false,
+        "Target": "Closest",
+        "Predict": true,
+        "Multi Place": false,
+        "Face Place Health": 8.0,
+        "Render": true
+      }
+    },
+    "CrystalOptimizer": {
+      "enabled": false,
+      "settings": {
+        "Keybind": 72,
+        "Visible": true
+      }
+    },
+    "AirAnchor": {
+      "enabled": false,
+      "settings": {
+        "Keybind": 74,
+        "Visible": true
+      }
+    },
+    "AutoTotem": {
+      "enabled": false,
+      "settings": {
+        "Keybind": 89,
+        "Visible": true
+      }
+    },
+    "KillAura": {
+      "enabled": false,
+      "settings": {
+        "Keybind": 82,
+        "Visible": true,
+        "Range": 4.0,
+        "Attack Delay": 15.578947368421051,
+        "Target Players": true,
+        "Target Mobs": true,
+        "Target Animals": true,
+        "Rotate": false,
+        "Auto Switch": false,
+        "Only Sword": false,
+        "Criticals": true,
+        "Through Walls": false,
+        "Pause On Eat": true,
+        "Randomize": true,
+        "Priority": "Distance",
+        "Timing": "Pre",
+        "FOV": 180.0,
+        "Swing": true
+      }
+    },
+    "Surround": {
+      "enabled": false,
+      "settings": {
+        "Keybind": 67,
+        "Visible": true,
+        "Center Player": true,
+        "Auto Disable": false,
+        "Auto Switch": true,
+        "Full Surround": false,
+        "Dynamic": true,
+        "Anti Crystal": true,
+        "Anti City": false,
+        "Render": true,
+        "Place Delay": 1.0,
+        "Blocks Per Tick": 1.0,
+        "Block Type": "Obsidian"
+      }
+    },
+    "AntiKnockback": {
+      "enabled": false,
+      "settings": {
+        "Keybind": -1,
+        "Visible": true,
+        "Horizontal": 0.0,
+        "Vertical": 0.0,
+        "Explosions": true,
+        "Attacks": true,
+        "Water": true
+      }
+    },
+    "Criticals": {
+      "enabled": false,
+      "settings": {
+        "Keybind": -1,
+        "Visible": true,
+        "Mode": "Packet"
+      }
+    },
+    "Reach": {
+      "enabled": false,
+      "settings": {
+        "Keybind": -1,
+        "Visible": true,
+        "Distance": 3.5
+      }
+    },
+    "AutoDoubleHand": {
+      "enabled": false,
+      "settings": {
+        "Keybind": -1,
+        "Visible": true,
+        "Main Hand": "Sword",
+        "Off Hand": "Totem",
+        "Swap Back": true,
+        "Only In Combat": true,
+        "Delay": 2.0
+      }
+    },
+    "AutoInventoryTotem": {
+      "enabled": false,
+      "settings": {
+        "Keybind": -1,
+        "Visible": true,
+        "Health Threshold": 10.0,
+        "Prioritize Hotbar": true,
+        "Only When Low": false,
+        "Delay": 1.0
+      }
+    },
+    "DoubleAnchor": {
+      "enabled": false,
+      "settings": {
+        "Keybind": 76,
+        "Visible": true,
+        "Range": 4.5,
+        "Place Delay": 2.0,
+        "Auto Switch": true,
+        "Rotate": false,
+        "Render": true,
+        "Targeting": "Closest",
+        "Auto Charge": true,
+        "Auto Glowstone": false,
+        "Prevent Self Damage": true
+      }
+    },
+    "Hitboxes": {
+      "enabled": false,
+      "settings": {
+        "Keybind": -1,
+        "Visible": true,
+        "Expand Amount": 0.3,
+        "Only Players": true,
+        "Only Enemies": true,
+        "Render": true
+      }
+    },
+    "AnchorMacro": {
+      "enabled": false,
+      "settings": {
+        "Keybind": -1,
+        "Visible": true,
+        "Auto Switch": true,
+        "Rotate": false,
+        "Delay": 1.0,
+        "Activation": "Key Press",
+        "Place First": true,
+        "Instant Detonate": true
+      }
+    },
+    "AutoHitCrystal": {
+      "enabled": false,
+      "settings": {
+        "Keybind": -1,
+        "Visible": true,
+        "Range": 4.5,
+        "Delay": 2.0,
+        "Only Visible": true,
+        "Rotate": false,
+        "Only Dangerous": false,
+        "Prioritize Near Player": true,
+        "Max Targets": 1.0,
+        "Auto Crystal": true,
+        "Placement Range": 4.0,
+        "Auto Switch": true,
+        "Max Self Damage": 4.0,
+        "Anti Suicide": true,
+        "Critical Delay": 500.0,
+        "Smart Crits": true,
+        "Min Enemy Damage": 4.0,
+        "Prevent Friend Damage": true
+      }
+    },
+    "ShieldBreaker": {
+      "enabled": false,
+      "settings": {
+        "Keybind": -1,
+        "Visible": true,
+        "Range": 4.0,
+        "Auto Switch": true,
+        "Rotate": false,
+        "Only Axe": true,
+        "Delay": 5.0
+      }
+    },
+    "AutoTrap": {
+      "enabled": false,
+      "settings": {
+        "Keybind": -1,
+        "Visible": true,
+        "Range": 4.5,
+        "Delay": 1.0,
+        "Blocks Per Tick": 4.0,
+        "Auto Switch": true,
+        "Rotate": false,
+        "Top Block": true,
+        "Full Trap": false,
+        "Target Mode": "Closest",
+        "Render": true
+      }
+    },
+    "HoleFiller": {
+      "enabled": false,
+      "settings": {
+        "Keybind": -1,
+        "Visible": true,
+        "Range": 4.5,
+        "Delay": 1.0,
+        "Blocks Per Tick": 4.0,
+        "Auto Switch": true,
+        "Rotate": false,
+        "Smart": true,
+        "Target Range": 3.0,
+        "Block Type": "Obsidian",
+        "Render": true
+      }
+    },
+    "AutoCity": {
+      "enabled": false,
+      "settings": {
+        "Keybind": -1,
+        "Visible": true,
+        "Range": 5.0,
+        "Auto Switch": true,
+        "Rotate": false,
+        "Instant Mine": true,
+        "Target Mode": "Closest",
+        "Render": true,
+        "Auto Disable": true
+      }
+    },
+    "AutoGapple": {
+      "enabled": false,
+      "settings": {
+        "Keybind": -1,
+        "Visible": true,
+        "Health Threshold": 10.0,
+        "Prefer Enchanted": true,
+        "Swap Back": true,
+        "Only In Combat": false,
+        "Eat Delay": 10.0
+      }
+    },
+    "FastPlace": {
+      "enabled": true,
+      "settings": {
+        "Keybind": -1,
+        "Visible": true,
+        "Delay": 0.0,
+        "Blocks": true,
+        "Exp Bottles": true,
+        "Crystals": true,
+        "Ender Pearls": false
+      }
+    },
+    "BurrowDetector": {
+      "enabled": false,
+      "settings": {
+        "Keybind": -1,
+        "Visible": true,
+        "Range": 20.0,
+        "Notify": true,
+        "Render": true
+      }
+    },
+    "BedAura": {
+      "enabled": false,
+      "settings": {
+        "Keybind": -1,
+        "Visible": true,
+        "Range": 4.5,
+        "Delay": 10.0,
+        "Auto Switch": true,
+        "Rotate": false,
+        "Only Nether/End": true,
+        "Target Mode": "Closest",
+        "Render": true,
+        "Instant Break": true
+      }
+    },
+    "Speed": {
+      "enabled": false,
+      "settings": {
+        "Keybind": 86,
+        "Visible": true
+      }
+    },
+    "Step": {
+      "enabled": false,
+      "settings": {
+        "Keybind": 77,
+        "Visible": true,
+        "Height": 1.0,
+        "Mode": "Vanilla",
+        "Entity Step": true,
+        "Bypass Mode": false
+      }
+    },
+    "ElytraFlight": {
+      "enabled": false,
+      "settings": {
+        "Keybind": -1,
+        "Visible": true,
+        "Mode": "Normal",
+        "Speed": 1.8,
+        "Fall Speed": 0.0,
+        "Auto Take Off": true,
+        "Instant Fly": false,
+        "Boost": true,
+        "Boost Factor": 1.5
+      }
+    },
+    "Jesus": {
+      "enabled": false,
+      "settings": {
+        "Keybind": -1,
+        "Visible": true,
+        "Mode": "Solid",
+        "Speed": 1.0,
+        "Solid": true,
+        "Bypass": true,
+        "No Sink": true
+      }
+    },
+    "Scaffold": {
+      "enabled": false,
+      "settings": {
+        "Keybind": 88,
+        "Visible": true,
+        "Rotate": false,
+        "Safe Walk": true,
+        "Tower": true,
+        "Auto Switch": true,
+        "Delay": 0.0,
+        "Mode": "Normal",
+        "Render": true
+      }
+    },
+    "HUD": {
+      "enabled": false,
+      "settings": {
+        "Keybind": 80,
+        "Visible": true
+      }
+    },
+    "ClickGUI": {
+      "enabled": false,
+      "settings": {
+        "Keybind": 344,
+        "Visible": true
+      }
+    },
+    "ESP": {
+      "enabled": true,
+      "settings": {
+        "Keybind": 79,
+        "Visible": true
+      }
+    },
+    "BlockESP": {
+      "enabled": false,
+      "settings": {
+        "Keybind": -1,
+        "Visible": true,
+        "Render Mode": "Outline",
+        "Range": 32.0,
+        "Iron Ore": true,
+        "Gold Ore": true,
+        "Diamond Ore": true,
+        "Emerald Ore": true,
+        "Redstone Ore": true,
+        "Lapis Ore": true,
+        "Coal Ore": false,
+        "Ancient Debris": true,
+        "Netherite Block": true,
+        "Chest": true,
+        "Ender Chest": true,
+        "Shulker Box": true,
+        "Spawner": true,
+        "Portal": true,
+        "Bedrock": false,
+        "Command Block": true,
+        "Tracer": false,
+        "Alpha": 0.4,
+        "Line Width": 2.0
+      }
+    },
+    "Tracers": {
+      "enabled": true,
+      "settings": {
+        "Keybind": -1,
+        "Visible": true,
+        "Players": true,
+        "Friends": true,
+        "Hostile Mobs": false,
+        "Passive Mobs": false,
+        "Items": false,
+        "Crystals": true,
+        "Width": 1.5,
+        "Opacity": 0.8,
+        "Range": 100.0,
+        "Color Mode": "Distance",
+        "Through Walls": true,
+        "Origin": "Crosshair"
+      }
+    },
+    "XRay": {
+      "enabled": false,
+      "settings": {
+        "Keybind": 88,
+        "Visible": true,
+        "Mode": "Normal",
+        "Opacity": 0.9368421052631579,
+        "Fullbright": true,
+        "Outline": true,
+        "Cave Mode": false,
+        "Diamond Ore": true,
+        "Emerald Ore": true,
+        "Gold Ore": true,
+        "Iron Ore": true,
+        "Coal Ore": false,
+        "Redstone Ore": true,
+        "Lapis Ore": true,
+        "Quartz Ore": true,
+        "Ancient Debris": true,
+        "Chest": true,
+        "Spawner": true,
+        "Portal": true,
+        "Bedrock": false,
+        "Command Block": true
+      }
+    },
+    "Trajectories": {
+      "enabled": false,
+      "settings": {
+        "Keybind": -1,
+        "Visible": true,
+        "Render Mode": "Line",
+        "Arrows": true,
+        "Ender Pearls": true,
+        "Snowballs": true,
+        "Eggs": true,
+        "Potions": true,
+        "Fishing Rod": true,
+        "Show Hit Position": true,
+        "Show Hit Block": true,
+        "Line Width": 2.0,
+        "Simulation Steps": 100.0
+      }
+    },
+    "NoRender": {
+      "enabled": false,
+      "settings": {
+        "Keybind": -1,
+        "Visible": true,
+        "Fire": true,
+        "Water": false,
+        "Portal": true,
+        "Pumpkin": true,
+        "Blindness": true,
+        "Nausea": true,
+        "Weather": false,
+        "Fog": false,
+        "Explosions": false,
+        "Totem Animation": false,
+        "Fireworks": false,
+        "Potion Particles": true,
+        "Armor": false,
+        "Enchantment Glint": false,
+        "Damage": false,
+        "Boss Bar": false,
+        "Scoreboard": false,
+        "Crosshair": false,
+        "Potion Icons": true,
+        "Sign Text": false,
+        "Block Break": false,
+        "Map": false
+      }
+    },
+    "CustomFont": {
+      "enabled": true,
+      "settings": {
+        "Keybind": -1,
+        "Visible": true,
+        "Font": "Montserrat",
+        "Size": 18.0,
+        "Anti-Alias": true,
+        "Shadow": true,
+        "Minecraft Font for Chat": true
+      }
+    },
+    "PacketMine": {
+      "enabled": false,
+      "settings": {
+        "Keybind": 66,
+        "Visible": true,
+        "Break Delay": 5.0,
+        "Instant Break": false,
+        "Auto Break": false,
+        "Silent": true,
+        "Bypass Mode": false,
+        "Rotate": false
+      }
+    },
+    "NoFall": {
+      "enabled": true,
+      "settings": {
+        "Keybind": 78,
+        "Visible": true,
+        "Mode": "Packet"
+      }
+    },
+    "NoSlow": {
+      "enabled": true,
+      "settings": {
+        "Keybind": -1,
+        "Visible": true,
+        "Items": true,
+        "Web": true,
+        "Soul Sand": true,
+        "Slime": true,
+        "Ice": true,
+        "Multiplier": 1.0
+      }
+    },
+    "Timer": {
+      "enabled": false,
+      "settings": {
+        "Keybind": -1,
+        "Visible": true,
+        "Speed": 1.5,
+        "On Move": false,
+        "On Ground": false,
+        "Adaptive": false,
+        "Min Speed": 1.0,
+        "Max Speed": 2.0
+      }
+    },
+    "XCarry": {
+      "enabled": false,
+      "settings": {
+        "Keybind": -1,
+        "Visible": true,
+        "Force": true,
+        "Visual": true,
+        "Store": false
+      }
+    },
+    "Freecam": {
+      "enabled": false,
+      "settings": {
+        "Keybind": -1,
+        "Visible": true,
+        "Speed": 1.0,
+        "Collision": false,
+        "Auto Third Person": true,
+        "Show Player": true
+      }
+    },
+    "Phase": {
+      "enabled": false,
+      "settings": {
+        "Keybind": -1,
+        "Visible": true,
+        "Mode": "Vanilla",
+        "Speed": 0.2,
+        "Bypass": true,
+        "NoClip": true,
+        "Auto Disable": false
+      }
+    },
+    "AntiHunger": {
+      "enabled": false,
+      "settings": {
+        "Keybind": -1,
+        "Visible": true,
+        "Cancel Sprint": true,
+        "Ground Spoof": true,
+        "No Movement Packets": false
+      }
+    },
+    "AutoEXP": {
+      "enabled": false,
+      "settings": {
+        "Keybind": -1,
+        "Visible": true,
+        "Delay": 2.0,
+        "Auto Switch": true,
+        "Only Armor": true,
+        "Only Damaged": true,
+        "Min Durability": 50.0,
+        "Silent": true
+      }
+    },
+    "AutoTool": {
+      "enabled": false,
+      "settings": {
+        "Keybind": -1,
+        "Visible": true,
+        "Switch Back": true,
+        "Only Hotbar": true,
+        "Prefer Sword": true,
+        "Check Durability": true,
+        "Min Durability": 10.0
+      }
+    },
+    "PanicMode": {
+      "enabled": false,
+      "settings": {
+        "Keybind": 261,
+        "Visible": true,
+        "Disable Modules": true,
+        "Hide HUD": true,
+        "Restore On Toggle": false,
+        "Close Screen": true
+      }
+    },
+    "StreamMode": {
+      "enabled": false,
+      "settings": {
+        "Keybind": 301,
+        "Visible": true,
+        "Hide HUD": true,
+        "Hide Visual Modules": true,
+        "Hide Watermark": true,
+        "Hide Keybindings": true,
+        "Hide Notifications": true,
+        "Activation": "Manual"
+      }
+    },
+    "AutoFish": {
+      "enabled": false,
+      "settings": {
+        "Keybind": -1,
+        "Visible": true,
+        "Catch Delay": 300.0,
+        "Recast Delay": 500.0,
+        "Auto Switch": true,
+        "Prevent Break": true,
+        "Anti-AFK": true,
+        "Anti-AFK Interval": 60.0
+      }
+    },
+    "MiddleClickFriend": {
+      "enabled": true,
+      "settings": {
+        "Keybind": -1,
+        "Visible": true,
+        "Notifications": true,
+        "Chat Commands": true,
+        "Prefer Mouse": true
+      }
+    },
+    "AutoRespawn": {
+      "enabled": false,
+      "settings": {
+        "Keybind": -1,
+        "Visible": true,
+        "Delay": 500.0,
+        "Anti Death Screen": true,
+        "Auto Kit": false,
+        "Notifications": true
+      }
+    },
+    "ClickPearl": {
+      "enabled": true,
+      "settings": {
+        "Keybind": -1,
+        "Visible": true,
+        "Notifications": true,
+        "Silent": true,
+        "Prefer Hotbar": true,
+        "Cooldown": 500.0,
+        "Check Cooldown": true
+      }
+    }
+  }
+}

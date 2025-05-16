@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "werlii",
+  "version": "1.0-SNAPSHOT",
+  "name": "Werlii",
+  "description": "PvP enhancement client for Minecraft 1.21",
+  "authors": ["Werlii"],
+  "contact": {
+    "repo": ""
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "assets/werlii/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["org.kurva.werlii.client.WerliiClient"],
+    "main": ["org.kurva.werlii.Werlii"]
+  },
+  "mixins": ["werlii.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.16.10",
+    "fabric": "*",
+    "minecraft": "1.21"
+  }
+}
+

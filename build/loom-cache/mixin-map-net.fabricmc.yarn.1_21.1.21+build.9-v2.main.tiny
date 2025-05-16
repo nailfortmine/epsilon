@@ -1,0 +1,5 @@
+v1	named	intermediary
+FIELD	org/kurva/werlii/mixin/EntityVelocityUpdateS2CPacketMixin	I	velocityX	field_12563
+FIELD	org/kurva/werlii/mixin/EntityVelocityUpdateS2CPacketMixin	I	velocityY	field_12562
+FIELD	org/kurva/werlii/mixin/EntityVelocityUpdateS2CPacketMixin	I	velocityZ	field_12561
+FIELD	org/kurva/werlii/mixin/EntityVelocityUpdateS2CPacketMixin	I	entityId	field_12564

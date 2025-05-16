@@ -1,0 +1,66 @@
+{
+  "mappings": {
+    "org/kurva/werlii/mixin/ClientPlayerInteractionManagerMixin": {
+      "attackEntity": "Lnet/minecraft/class_636;method_2918(Lnet/minecraft/class_1657;Lnet/minecraft/class_1297;)V"
+    },
+    "org/kurva/werlii/mixin/EntityMixin": {
+      "getBoundingBox": "Lnet/minecraft/class_1297;method_5829()Lnet/minecraft/class_238;",
+      "getStepHeight": "Lnet/minecraft/class_1297;method_49476()F"
+    },
+    "org/kurva/werlii/mixin/EntityVelocityUpdateS2CPacketMixin": {
+      "<init>*": "Lnet/minecraft/class_2743;<init>(Lnet/minecraft/class_1297;)V"
+    },
+    "org/kurva/werlii/mixin/GameRendererMixin": {
+      "render": "Lnet/minecraft/class_757;method_3192(Lnet/minecraft/class_9779;Z)V"
+    },
+    "org/kurva/werlii/mixin/InGameHudMixin": {
+      "render": "Lnet/minecraft/class_329;method_1753(Lnet/minecraft/class_332;Lnet/minecraft/class_9779;)V"
+    },
+    "org/kurva/werlii/mixin/InGameOverlayRendererMixin": {
+      "renderFireOverlay": "Lnet/minecraft/class_4603;method_23070(Lnet/minecraft/class_310;Lnet/minecraft/class_4587;)V",
+      "renderUnderwaterOverlay": "Lnet/minecraft/class_4603;method_23069(Lnet/minecraft/class_310;Lnet/minecraft/class_4587;)V"
+    },
+    "org/kurva/werlii/mixin/MinecraftClientAccessor": {
+      "attackCooldown": "field_1771:I",
+      "itemUseCooldown": "field_1752:I"
+    },
+    "org/kurva/werlii/mixin/MinecraftClientMixin": {
+      "handleInputEvents": "Lnet/minecraft/class_310;method_1508()V",
+      "render": "Lnet/minecraft/class_310;method_1523(Z)V",
+      "tick": "Lnet/minecraft/class_310;method_1574()V"
+    }
+  },
+  "data": {
+    "named:intermediary": {
+      "org/kurva/werlii/mixin/ClientPlayerInteractionManagerMixin": {
+        "attackEntity": "Lnet/minecraft/class_636;method_2918(Lnet/minecraft/class_1657;Lnet/minecraft/class_1297;)V"
+      },
+      "org/kurva/werlii/mixin/EntityMixin": {
+        "getBoundingBox": "Lnet/minecraft/class_1297;method_5829()Lnet/minecraft/class_238;",
+        "getStepHeight": "Lnet/minecraft/class_1297;method_49476()F"
+      },
+      "org/kurva/werlii/mixin/EntityVelocityUpdateS2CPacketMixin": {
+        "<init>*": "Lnet/minecraft/class_2743;<init>(Lnet/minecraft/class_1297;)V"
+      },
+      "org/kurva/werlii/mixin/GameRendererMixin": {
+        "render": "Lnet/minecraft/class_757;method_3192(Lnet/minecraft/class_9779;Z)V"
+      },
+      "org/kurva/werlii/mixin/InGameHudMixin": {
+        "render": "Lnet/minecraft/class_329;method_1753(Lnet/minecraft/class_332;Lnet/minecraft/class_9779;)V"
+      },
+      "org/kurva/werlii/mixin/InGameOverlayRendererMixin": {
+        "renderFireOverlay": "Lnet/minecraft/class_4603;method_23070(Lnet/minecraft/class_310;Lnet/minecraft/class_4587;)V",
+        "renderUnderwaterOverlay": "Lnet/minecraft/class_4603;method_23069(Lnet/minecraft/class_310;Lnet/minecraft/class_4587;)V"
+      },
+      "org/kurva/werlii/mixin/MinecraftClientAccessor": {
+        "attackCooldown": "field_1771:I",
+        "itemUseCooldown": "field_1752:I"
+      },
+      "org/kurva/werlii/mixin/MinecraftClientMixin": {
+        "handleInputEvents": "Lnet/minecraft/class_310;method_1508()V",
+        "render": "Lnet/minecraft/class_310;method_1523(Z)V",
+        "tick": "Lnet/minecraft/class_310;method_1574()V"
+      }
+    }
+  }
+}
