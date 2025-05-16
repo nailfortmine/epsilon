@@ -66,24 +66,28 @@
       "settings": {
         "Keybind": 82,
         "Visible": true,
-        "Range": 4.0,
-        "Attack Delay": 0.5263157894736842,
-        "Target Players": true,
-        "Target Mobs": true,
-        "Target Animals": true,
-        "Rotate": false,
-        "Rotation Mode": "Default",
-        "Auto Switch": false,
-        "Only Sword": false,
-        "Criticals": false,
-        "Through Walls": true,
-        "Pause On Eat": true,
-        "Randomize": true,
-        "Priority": "Distance",
-        "Timing": "Both",
-        "FOV": 360.0,
-        "Swing": true,
-        "Item Cooldowns": true
+        "Дальность атаки": 3.6,
+        "Дальность наводки": 0.3,
+        "Дальность с элитрами": 6.0,
+        "Тип поворота": "Matrix",
+        "Скорость поворота": "Medium",
+        "Критические удары": "None",
+        "Атаковать игроков": true,
+        "Атаковать мобов": true,
+        "Атаковать животных": true,
+        "Атаковать друзей": true,
+        "Атаковать без брони": true,
+        "Атаковать невидимых": true,
+        "Ломать щиты": true,
+        "Только криты": true,
+        "Умные криты": false,
+        "Сквозь стены": true,
+        "Обход стен": false,
+        "Пауза при еде": false,
+        "Коррекция движения": true,
+        "Приоритет": "Distance",
+        "Поле зрения": 180.0,
+        "Взмах": true
       }
     },
     "Surround": {
@@ -534,6 +538,13 @@
         "Anti-Alias": true,
         "Shadow": true,
         "Minecraft Font for Chat": true
+      }
+    },
+    "TargetESP": {
+      "enabled": true,
+      "settings": {
+        "Keybind": 85,
+        "Visible": true
       }
     },
     "PacketMine": {

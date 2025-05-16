@@ -58,6 +58,8 @@ public ModuleManager() {
   modules.add(new Trajectories());
   modules.add(new NoRender());
   modules.add(new CustomFont()); // Add the new CustomFont module
+  modules.add(new TargetESP());
+  modules.add(new TargetStrafe());
   
   // Exploit
   modules.add(new PacketMine());

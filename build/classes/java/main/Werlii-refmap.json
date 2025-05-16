@@ -13,6 +13,9 @@
     "org/kurva/werlii/mixin/GameRendererMixin": {
       "render": "Lnet/minecraft/class_757;method_3192(Lnet/minecraft/class_9779;Z)V"
     },
+    "org/kurva/werlii/mixin/HudRenderMixin": {
+      "render": "Lnet/minecraft/class_329;method_1753(Lnet/minecraft/class_332;Lnet/minecraft/class_9779;)V"
+    },
     "org/kurva/werlii/mixin/InGameHudMixin": {
       "render": "Lnet/minecraft/class_329;method_1753(Lnet/minecraft/class_332;Lnet/minecraft/class_9779;)V"
     },
@@ -44,6 +47,9 @@
       },
       "org/kurva/werlii/mixin/GameRendererMixin": {
         "render": "Lnet/minecraft/class_757;method_3192(Lnet/minecraft/class_9779;Z)V"
+      },
+      "org/kurva/werlii/mixin/HudRenderMixin": {
+        "render": "Lnet/minecraft/class_329;method_1753(Lnet/minecraft/class_332;Lnet/minecraft/class_9779;)V"
       },
       "org/kurva/werlii/mixin/InGameHudMixin": {
         "render": "Lnet/minecraft/class_329;method_1753(Lnet/minecraft/class_332;Lnet/minecraft/class_9779;)V"
