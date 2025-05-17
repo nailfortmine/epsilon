@@ -64,30 +64,31 @@
     "KillAura": {
       "enabled": true,
       "settings": {
-        "Keybind": 82,
+        "Keybind": 66,
         "Visible": true,
-        "Дальность атаки": 3.6,
-        "Дальность наводки": 0.3,
+        "Дальность атаки": 2.942105263157895,
+        "Дальность наводки": 0.5526315789473684,
         "Дальность с элитрами": 6.0,
-        "Тип поворота": "Matrix",
-        "Скорость поворота": "Medium",
+        "Тип поворота": "Grim",
+        "Скорость поворота": 90.0,
         "Критические удары": "None",
         "Атаковать игроков": true,
         "Атаковать мобов": true,
         "Атаковать животных": true,
-        "Атаковать друзей": true,
+        "Атаковать друзей": false,
         "Атаковать без брони": true,
         "Атаковать невидимых": true,
         "Ломать щиты": true,
         "Только криты": true,
         "Умные криты": false,
         "Сквозь стены": true,
-        "Обход стен": false,
-        "Пауза при еде": false,
+        "Пауза при еде": true,
         "Коррекция движения": true,
         "Приоритет": "Distance",
-        "Поле зрения": 180.0,
-        "Взмах": true
+        "Взмах": true,
+        "Скорость оружия": false,
+        "Случайная задержка": 50.0,
+        "Приоритет угрозы": true
       }
     },
     "Surround": {
@@ -293,7 +294,7 @@
       }
     },
     "FastPlace": {
-      "enabled": true,
+      "enabled": false,
       "settings": {
         "Keybind": -1,
         "Visible": true,
@@ -362,7 +363,7 @@
       }
     },
     "Jesus": {
-      "enabled": true,
+      "enabled": false,
       "settings": {
         "Keybind": -1,
         "Visible": true,
@@ -388,7 +389,7 @@
       }
     },
     "HUD": {
-      "enabled": false,
+      "enabled": true,
       "settings": {
         "Keybind": 80,
         "Visible": true
@@ -402,7 +403,7 @@
       }
     },
     "ESP": {
-      "enabled": true,
+      "enabled": false,
       "settings": {
         "Keybind": 79,
         "Visible": true
@@ -437,7 +438,7 @@
       }
     },
     "Tracers": {
-      "enabled": true,
+      "enabled": false,
       "settings": {
         "Keybind": -1,
         "Visible": true,
@@ -461,7 +462,7 @@
         "Keybind": 88,
         "Visible": true,
         "Mode": "Normal",
-        "Opacity": 0.9368421052631579,
+        "Opacity": 0.0,
         "Fullbright": true,
         "Outline": true,
         "Cave Mode": false,
@@ -541,10 +542,33 @@
       }
     },
     "TargetESP": {
-      "enabled": true,
+      "enabled": false,
       "settings": {
         "Keybind": 85,
         "Visible": true
+      }
+    },
+    "TargetStrafe": {
+      "enabled": true,
+      "settings": {
+        "Keybind": 74,
+        "Visible": true,
+        "Радиус": 1.4,
+        "Скорость": 0.48736842105263156,
+        "По часовой": true,
+        "Режим обхода": "Default",
+        "Избегать стен": false,
+        "Авто-прыжок": false,
+        "Страйф в воздухе": true
+      }
+    },
+    "InventoryMove": {
+      "enabled": false,
+      "settings": {
+        "Keybind": 73,
+        "Visible": true,
+        "Спринт": true,
+        "Прыжок": true
       }
     },
     "PacketMine": {
@@ -561,7 +585,7 @@
       }
     },
     "NoFall": {
-      "enabled": true,
+      "enabled": false,
       "settings": {
         "Keybind": 78,
         "Visible": true,
@@ -569,7 +593,7 @@
       }
     },
     "NoSlow": {
-      "enabled": true,
+      "enabled": false,
       "settings": {
         "Keybind": -1,
         "Visible": true,

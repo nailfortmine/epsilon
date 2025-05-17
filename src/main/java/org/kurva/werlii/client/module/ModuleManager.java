@@ -60,6 +60,7 @@ public ModuleManager() {
   modules.add(new CustomFont()); // Add the new CustomFont module
   modules.add(new TargetESP());
   modules.add(new TargetStrafe());
+  modules.add(new InventoryMove());
   
   // Exploit
   modules.add(new PacketMine());

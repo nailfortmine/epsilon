@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "werlii",
-  "version": "${version}",
+  "version": "1.0.0",
   "name": "Werlii",
   "description": "PvP enhancement client for Minecraft 1.21",
   "authors": ["Werlii"],
@@ -16,10 +16,11 @@
     "main": ["org.kurva.werlii.Werlii"]
   },
   "mixins": ["werlii.mixins.json"],
+  "accessWidener": "werlii.accesswidener",
   "depends": {
-    "fabricloader": ">=${loader_version}",
-    "fabric": "*",
-    "minecraft": "${minecraft_version}"
+    "fabricloader": ">=0.15.11",
+    "fabric-api": "*",
+    "minecraft": "1.21",
+    "java": ">=21"
   }
 }
-

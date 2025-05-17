@@ -31,6 +31,9 @@
       "handleInputEvents": "Lnet/minecraft/class_310;method_1508()V",
       "render": "Lnet/minecraft/class_310;method_1523(Z)V",
       "tick": "Lnet/minecraft/class_310;method_1574()V"
+    },
+    "org/kurva/werlii/mixin/TitleScreenMixin": {
+      "init": "Lnet/minecraft/class_442;method_25426()V"
     }
   },
   "data": {
@@ -66,6 +69,9 @@
         "handleInputEvents": "Lnet/minecraft/class_310;method_1508()V",
         "render": "Lnet/minecraft/class_310;method_1523(Z)V",
         "tick": "Lnet/minecraft/class_310;method_1574()V"
+      },
+      "org/kurva/werlii/mixin/TitleScreenMixin": {
+        "init": "Lnet/minecraft/class_442;method_25426()V"
       }
     }
   }

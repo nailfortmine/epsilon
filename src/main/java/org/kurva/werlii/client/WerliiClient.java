@@ -38,9 +38,6 @@ public class WerliiClient implements ClientModInitializer {
         configManager = new ConfigManager();
         keyBindingHandler = new KeyBindingHandler();
 
-        // Don't initialize font manager here - it will be initialized when needed
-        // FontManager.getInstance();
-
         // Register keybindings
         keyBindingHandler.registerKeybindings();
 
@@ -59,6 +56,7 @@ public class WerliiClient implements ClientModInitializer {
         configManager.loadConfig();
 
         Werlii.LOGGER.info("Werlii Client initialized successfully");
+        Werlii.LOGGER.info("AcManager feature initialized");
     }
 
     private void registerConnectionEvents() {
@@ -69,6 +67,7 @@ public class WerliiClient implements ClientModInitializer {
             if (client.player != null) {
                 client.player.sendMessage(Text.literal("§8[§bWerlii§8] §aWerlii client activated. All modules are available."), false);
                 client.player.sendMessage(Text.literal("§8[§bWerlii§8] §aPress RIGHT SHIFT to open ClickGUI."), false);
+                client.player.sendMessage(Text.literal("§8[§bWerlii§8] §aAcManager available in main menu."), false);
             }
 
             if (bypassMode) {
@@ -147,4 +146,3 @@ public class WerliiClient implements ClientModInitializer {
         }
     }
 }
-

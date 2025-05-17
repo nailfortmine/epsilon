@@ -12,7 +12,8 @@
     "InGameHudMixin",
     "EntityVelocityUpdateS2CPacketMixin",
     "MinecraftClientAccessor",
-    "InGameOverlayRendererMixin"
+    "InGameOverlayRendererMixin",
+    "TitleScreenMixin"
   ],
   "injectors": {
     "defaultRequire": 1

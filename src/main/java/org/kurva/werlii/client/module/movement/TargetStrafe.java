@@ -1,4 +1,3 @@
-
 package org.kurva.werlii.client.module.movement;
 
 import net.minecraft.client.MinecraftClient;
@@ -24,7 +23,8 @@ public class TargetStrafe extends Module {
     private final BooleanSetting clockwiseS;
     private final ModeSetting bypassModeS;
     private final BooleanSetting avoidCollisionS;
-    private final BooleanSetting groundOnlyS;
+    private final BooleanSetting autoJumpS;
+    private final BooleanSetting allowAirStrafeS; // Новая настройка для страйфа в воздухе
 
     public TargetStrafe() {
         super("TargetStrafe", "Движение вокруг цели KillAura", Category.MOVEMENT);
@@ -35,16 +35,18 @@ public class TargetStrafe extends Module {
         radiusS = new NumberSetting("Радиус", "Дистанция до цели", this, 3.0, 1.0, 5.0, 0.1);
         speedS = new NumberSetting("Скорость", "Скорость страйфа", this, 0.2, 0.1, 0.5, 0.01);
         clockwiseS = new BooleanSetting("По часовой", "Двигаться по часовой стрелке", this, true);
-        bypassModeS = new ModeSetting("Режим обхода", "Тип обхода античита", this, "Legit", "Legit", "Matrix", "Grim");
+        bypassModeS = new ModeSetting("Режим обхода", "Тип обхода античита", this, "Default", "Default", "Legit", "Matrix", "Grim");
         avoidCollisionS = new BooleanSetting("Избегать стен", "Избегать столкновений с блоками", this, true);
-        groundOnlyS = new BooleanSetting("Только на земле", "Страйфить только на земле", this, true);
+        autoJumpS = new BooleanSetting("Авто-прыжок", "Автоматически прыгать при страйфе", this, false);
+        allowAirStrafeS = new BooleanSetting("Страйф в воздухе", "Позволять страйф в воздухе", this, true);
 
         addSetting(radiusS);
         addSetting(speedS);
         addSetting(clockwiseS);
         addSetting(bypassModeS);
         addSetting(avoidCollisionS);
-        addSetting(groundOnlyS);
+        addSetting(autoJumpS);
+        addSetting(allowAirStrafeS);
     }
 
     public static TargetStrafe getInstance() {
@@ -70,8 +72,8 @@ public class TargetStrafe extends Module {
     public void onTick() {
         if (mc.player == null || mc.world == null) return;
 
-        // Проверяем, что игрок на земле, если включена настройка
-        if (groundOnlyS.getValue() && !mc.player.isOnGround()) return;
+        // Проверяем, разрешён ли страйф в воздухе или игрок на земле
+        if (!allowAirStrafeS.getValue() && !mc.player.isOnGround()) return;
 
         // Получаем KillAura и цель
         KillAura killAura = KillAura.getInstance();
@@ -108,14 +110,23 @@ public class TargetStrafe extends Module {
         Vec3d targetPos = new Vec3d(strafeX, mc.player.getY(), strafeZ);
         Vec3d moveVec = targetPos.subtract(currentPos).normalize().multiply(speed);
 
+        // Авто-прыжок
+        if (autoJumpS.getValue() && mc.player.isOnGround()) {
+            mc.player.jump();
+        }
+
         // Применяем режим обхода
         switch (bypassModeS.getValue()) {
+            case "Default":
+                // Простое круговое движение
+                break;
+
             case "Legit":
                 // Плавное движение с лёгкой рандомизацией
                 moveVec = moveVec.multiply(0.9 + Math.random() * 0.2);
-                if (mc.player.isOnGround()) {
+                if (mc.player.isOnGround() && !autoJumpS.getValue()) {
                     // Имитация прыжков для легитности
-                    if (Math.random() < 0.05 && mc.player.isOnGround()) {
+                    if (Math.random() < 0.05) {
                         mc.player.jump();
                     }
                 }
@@ -153,7 +164,7 @@ public class TargetStrafe extends Module {
         // Применяем движение
         double newX = moveVec.x;
         double newZ = moveVec.z;
-        double newY = mc.player.getVelocity().y; // Сохраняем вертикальную скорость (падение, прыжки)
+        double newY = mc.player.getVelocity().y; // Сохраняем вертикальную скорость
 
         // Проверяем, чтобы не превысить максимальную скорость
         double maxSpeed = mc.player.isOnGround() ? 0.3 : 0.5;
@@ -175,8 +186,8 @@ public class TargetStrafe extends Module {
         BlockPos pos = new BlockPos((int) x, (int) y, (int) z);
         BlockPos below = pos.down();
 
-        // Проверяем, что под ногами твёрдый блок
-        if (!world.getBlockState(below).isSolid()) {
+        // Проверяем, что под ногами твёрдый блок (или воздух, если страйф в воздухе разрешён)
+        if (!allowAirStrafeS.getValue() && !world.getBlockState(below).isSolid()) {
             return false;
         }
 
