@@ -83,6 +83,20 @@ public class AccountManagerScreen extends Screen {
                                     MinecraftClient.getInstance().setScreen(parent);
                                 }
                         )
+                        .position(width / 2 - 100, height / 4 + 90)
+                        .size(200, 20)
+                        .build()
+        );
+
+        // Кнопка "AcManager"
+        addDrawableChild(
+                ButtonWidget.builder(
+                                Text.literal("AcManager"),
+                                button -> {
+                                    // Открывает этот же экран, можно изменить на другую логику
+                                    MinecraftClient.getInstance().setScreen(new AccountManagerScreen(parent));
+                                }
+                        )
                         .position(width / 2 - 100, height / 4 + 120)
                         .size(200, 20)
                         .build()
@@ -133,7 +147,7 @@ public class AccountManagerScreen extends Screen {
                     accounts = new ArrayList<>();
                 }
             } catch (Exception e) {
-
+                // Игнорируем ошибки чтения
             }
         }
     }
@@ -147,7 +161,7 @@ public class AccountManagerScreen extends Screen {
                 new Gson().toJson(accounts, writer);
             }
         } catch (Exception e) {
-
+            // Игнорируем ошибки записи
         }
     }
 
@@ -158,7 +172,7 @@ public class AccountManagerScreen extends Screen {
         context.drawCenteredTextWithShadow(textRenderer, title, width / 2, 20, 0xFFFFFF);
 
         for (int i = 0; i < accounts.size(); i++) {
-            context.drawText(textRenderer, accounts.get(i), width / 2 - 100, height / 4 + 90 + i * 20, 0xFFFFFF, false);
+            context.drawText(textRenderer, accounts.get(i), width / 2 - 100, height / 4 + 150 + i * 20, 0xFFFFFF, false);
         }
     }
 }

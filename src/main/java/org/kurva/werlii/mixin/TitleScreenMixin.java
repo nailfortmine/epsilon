@@ -22,7 +22,7 @@ public class TitleScreenMixin {
                         Text.literal("AcManager"),
                         btn -> MinecraftClient.getInstance().setScreen(new AccountManagerScreen(screen))
                 )
-                .position(screen.width / 2 - 100, screen.height / 4 + 144)
+                .position(screen.width / 2 - 100, screen.height / 4 + 168)
                 .size(200, 20)
                 .build();
 
